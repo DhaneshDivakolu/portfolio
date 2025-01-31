@@ -1,0 +1,62 @@
+body{
+    width: 100%;
+    background-color: rgba(20, 20, 126, 0.985);
+}
+.dummy{
+    float: left;
+    width: 100%;
+}
+.port{
+    float: left;
+    width: 30%;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+.top-nav{
+    float: left;
+    width: 68%;
+    color: aliceblue;
+    margin-top: 2%;
+}
+.top-nav li{
+    display: inline;
+    margin: 0% 1% 0% 8%;
+    font-size: 40px;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.left-div{
+    float: left;
+    width: 68%;
+    color: aliceblue;
+    font-size: 20px;
+}
+p{
+    float: left;
+    width: 100%;
+    color: aliceblue; 
+}
+.right-div{
+    float: left;
+    width: 29%;
+    /* margin-left: 3%; */
+    background-color: rgba(40, 189, 234, 0.762);
+    border-radius: 50%;
+}
+.right-div img{
+    background-size: 100%;
+    height: 510px;
+    border-radius: 70%;
+    margin: 4% 5% 3% 9%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+}
+i{
+    float: left;
+    /* width: 20%; */
+    margin: 1% 3% 1% 7%;
+    font-size: 40px;
+}
