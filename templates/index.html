@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dhanesh Portfolio</title>
+        <title>
+            {% block title %}
+            Dhanesh Portfolio
+            {% endblock title %}
+        </title>
         <link rel="stylesheet" href="../static/css/style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head>
@@ -10,15 +14,16 @@
         <div class="top-nav">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><i class="fas fa-home"><a href="/">Home</a></i></li>
+                    <li><i class="fas fa-user"><a href="/about">About</a></i></li>
+                    <li><i class="fas fa-briefcase"><a href="/projects">Projects</a></i></li>
+                    <li><i class="fas fa-envelope"><a href="/contact">Contact</a></i></li>
                 </ul>
             </nav>
         </div>
         <div class="dummy"></div>
         <div class="left-div">
+            {% block left %}
                 <h2>Hello, it's me</h2>
                 <h1>Dhanesh Divakolu</h1>
                 <h2>And I'm a Software Developer</h2>
@@ -26,6 +31,7 @@
                 With a deep interest in working collaboratively, I thrive in team environments where shared ideas lead to innovative solutions. 
                 I have a solid understanding of Core Java, Python, SQL and HTML, and am always eager to take on new challenges to further develop my technical skills.
                  My strong mindset and adaptability allow me to approach tasks efficiently and with a solution-oriented focus, whether in programming or working alongside others to achieve common goals.</p>
+            {% endblock left %}
                 <a href="https://www.instagram.com/dhanesh_48114"><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/DhaneshDivakolu"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/divakolu-dhanesh-972a4223b/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>

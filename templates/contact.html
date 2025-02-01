@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block title %}
+  Contact me
+{% endblock %}
+{% block left %}
+    <h1>Contact me Through your details</h1>
+    <div class="form">
+        <form action="/contact" method="post">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Enter your Name" name="name" required >
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" placeholder="Enter your email" name="email" required>
+            <i class="fas fa-phone icon"></i>
+            <input type="number" placeholder="Enter your ph number" name="phno" required>
+            <i class="fas fa-building icon"></i>
+            <input type="text" placeholder="Organization Name" name="org" required>
+            <i class="fas fa-map-marker-alt icon"></i>
+            <input type="text" placeholder="Location" name="loc" required>
+            <button type="submit">Send my details</button>
+        </form>
+    </div>
+    <h1>You can also Contact me Through</h1>
+    <ul>
+        <li><h3>Mobile No :</h3><h4>8309468903</h4></li>
+        <li><h3>Email :</h3><h4>dhaneshchowdary0@gmail.com</h4></li>
+    </ul>
+{% endblock %}
