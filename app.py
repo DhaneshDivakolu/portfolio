@@ -2,6 +2,7 @@ from flask import Flask,render_template,redirect,request
 from pymongo import MongoClient
 
 app = Flask(__name__)
+
 my_client = MongoClient("localhost", 27017)
 my_db= my_client["Portfolio"]
 user = my_db["User"]
